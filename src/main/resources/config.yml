@@ -1,0 +1,21 @@
+Database:
+  Host: 192.168.0.18
+  Port: 3306
+  Database: rpgtransfers
+  Table: cs1
+  Username: admin
+  Password: utc3gq4ur594
+
+ServerConfig:
+  ServerType: CS # Which type of server this plugin is being used on (CS: Cutscene, DGN: Dungeon, Arena: You Get The Point)
+
+Worlds: # Which worlds can the server create based on a template, {partyName} gets replaced by the partyName (This Is Wip And Is Subject To Change)
+  cs01:
+    Template: cs01_template
+    NewWorldName: cs01_{partyName}
+  Exceptions: # Which worlds the server will not delete when all the players leave (This Is Wip And Is Subject To Change)
+    cs01_template:
+
+Schedules: # Which Events Should Occur In What Order (This Is Wip And Is Subject To Change)
+  sh01:
+    1:

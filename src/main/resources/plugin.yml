@@ -1,0 +1,12 @@
+name: TRANSQUE
+version: '${project.version}'
+main: com.bonesnetwork.bungeeverse.TRANSQUE
+api-version: 1.19
+prefix: TRANSQUE
+softdepend: ['Multiverse-Core']
+authors: [ BonesMgee ]
+description: Template-based Region and Server Navigation System / Cutscene and Event Utility
+website: Bones.Network
+commands:
+  TQ:
+    description: Main Command
