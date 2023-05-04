@@ -2,7 +2,7 @@ Database:
   Host: 192.168.0.18
   Port: 3306
   Database: rpgtransfers
-  Table: cs1
+  Table: cs10
   Username: admin
   Password: utc3gq4ur594
 
