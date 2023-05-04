@@ -1,10 +1,10 @@
 Database:
-  Host: 192.168.0.18
-  Port: 3306
-  Database: rpgtransfers
-  Table: cs10
-  Username: admin
-  Password: utc3gq4ur594
+  Host:
+  Port:
+  Database:
+  Table:
+  Username: 
+  Password:
 
 ServerConfig:
   ServerType: CS # Which type of server this plugin is being used on (CS: Cutscene, DGN: Dungeon, Arena: You Get The Point)
