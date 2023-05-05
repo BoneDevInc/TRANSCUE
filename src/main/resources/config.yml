@@ -3,7 +3,7 @@ Database:
   Port:
   Database:
   Table:
-  Username: 
+  Username:
   Password:
 
 ServerConfig:
@@ -12,10 +12,24 @@ ServerConfig:
 Worlds: # Which worlds can the server create based on a template, {partyName} gets replaced by the partyName (This Is Wip And Is Subject To Change)
   cs01:
     Template: cs01_template
-    NewWorldName: cs01_{partyName}
+    NewWorldName: cs01_%partyName%
   Exceptions: # Which worlds the server will not delete when all the players leave (This Is Wip And Is Subject To Change)
     cs01_template:
 
 Schedules: # Which Events Should Occur In What Order (This Is Wip And Is Subject To Change)
   sh01:
-    1:
+    Settings:
+      StartingWorld: cs01
+      Singleplayer: true
+    Timeline:
+      1:
+        Type: Cutscene
+        Name: cs01
+      2:
+        Type: CreateWorld
+        Template: cs01_template
+        NewWorldName: cs01_%partyName%
+      3:
+        Type: MovePlayer
+        DestinationType: World
+        Destination:

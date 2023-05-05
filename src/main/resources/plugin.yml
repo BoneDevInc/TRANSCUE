@@ -1,6 +1,6 @@
 name: TRANSQUE
 version: '${project.version}'
-main: com.bonesnetwork.bungeeverse.TRANSQUE
+main: com.bonesnetwork.TRANSQUE.TRANSQUE
 api-version: 1.19
 prefix: TRANSQUE
 softdepend: ['Multiverse-Core']

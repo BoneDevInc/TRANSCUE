@@ -82,9 +82,9 @@
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>com.onarandombox.multiversecore</groupId> <!-- Don't forget to replace this -->
-            <artifactId>Multiverse-Core</artifactId> <!-- Replace this as well -->
-            <version>4.3.1</version> <!-- This too -->
+            <groupId>com.onarandombox.multiversecore</groupId>
+            <artifactId>Multiverse-Core</artifactId>
+            <version>4.3.1</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
@@ -97,7 +97,7 @@
             <artifactId>CinematicStudio</artifactId>
             <version>1.0</version>
             <scope>system</scope>
-            <systemPath>D:\GITRepos\BungeeVerse\src\main\resources\CinematicStudio_1.4.3-r8.jar</systemPath>
+            <systemPath>${project.basedir}\src\main\resources\CinematicStudio_1.4.3-r8.jar</systemPath>
         </dependency>
     </dependencies>
 </project>

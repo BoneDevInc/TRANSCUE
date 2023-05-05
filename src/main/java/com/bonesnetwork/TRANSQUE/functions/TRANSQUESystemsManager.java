@@ -72,9 +72,9 @@ public class TRANSQUESystemsManager {
         }
 
         if(inParty) {
-            newWorldName = config.getString("Worlds."+playerDestination+".NewWorldName").replace("{partyName}", partyName);
+            newWorldName = config.getString("Worlds."+playerDestination+".NewWorldName").replace("%partyName%", partyName);
         }else {
-            newWorldName = config.getString("Worlds."+playerDestination+".NewWorldName").replace("{partyName}", playerName);
+            newWorldName = config.getString("Worlds."+playerDestination+".NewWorldName").replace("%partyName%", playerName);
         }
 
         logger.info("New World Name: "+ newWorldName);

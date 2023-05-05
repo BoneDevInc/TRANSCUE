@@ -35,6 +35,7 @@ public final class TRANSQUE extends JavaPlugin {
         SQLDB.openConnection();
         registerEvents();
         registerCommands();
+        printLogo();
     }
 
     @Override
@@ -68,6 +69,38 @@ public final class TRANSQUE extends JavaPlugin {
 
     public void registerCommands() {
         getCommand("TQ").setExecutor(new CmdExecutor());
+    }
+
+    public void printLogo() {
+        logger.info("    .    .             ......  . .  .                              ");
+        logger.info("...///////(//********************,....,###########################(");
+        logger.info("..*//////(((((((((((**///***/***/***/**...######################## ");
+        logger.info(" .*/////(((((((((((####(//////////////***...#%%%%%##############...");
+        logger.info(" ..//////(((((((((((#####/////////////////,..%%%%%%%%%########.    ");
+        logger.info("  ..,/////((((((((((######/////////////////..#%%%%%%%%%####.       ");
+        logger.info("     ..*///((((((((((#####((((((((((//////,..%%%%%%###*            ");
+        logger.info("        ....  . . .......*(((((((((((((((,.. .                     ");
+        logger.info("                        ,(((((((((((((((..                         ");
+        logger.info("                       .(#######(##(((...                          ");
+        logger.info("                      .###########(...*(.                          ");
+        logger.info("                      .###########(...*(.                          ");
+        logger.info("                     .########(....#%%%                            ");
+        logger.info("                   ..####*.....%%%%%%%                             ");
+        logger.info("                     ....%%&&&&%%&%%%.                             ");
+        logger.info("                   (%&&&&&&&&&&&&%%%,                              ");
+        logger.info("                 .,&&&&&&&&&&&&&&&%(                               ");
+        logger.info("                . &&&&&&&&&&&&&&&&%                                ");
+        logger.info("                 %&&&&&&&&&&&&&&&%                                 ");
+        logger.info("                 %&&&&&&&&&&&&&&&.                                 ");
+        logger.info("                 .&&&&&&&&&&&&&&.                                  ");
+        logger.info("                  .&&&&&&&&&&&&*.                                  ");
+        logger.info("                   .%&&&&&&&&&%                                    ");
+        logger.info("                     ..&&&&&&&                                     ");
+        logger.info("                       .,&&##                                      ");
+        logger.info("-------------------------------------------------------------------");
+        logger.info("TRANSQUE VERSION: "+getDescription().getVersion());
+        logger.info("Made By Bones M'gee For The Bones Network (www.bonesnetwork.com)");
+        logger.info("-------------------------------------------------------------------");
     }
 }
 
